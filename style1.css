@@ -76,16 +76,16 @@ grid-template-columns: 2% 16% 16% 16% 16% 16% 16% 2%;
 	font-family: Segoe UI Light, Lighter, sans-serif; font-weight: 30;
 }
 
-
-
-
+input[type="checkbox"]:focus{
+        outline:0;
+    }
 
 .switch {
   position: relative;
   display: inline-block;
   width: 120px;
   height: 68px;
-
+-webkit-appearance: none;
     outline:none;
 }
 
@@ -94,7 +94,7 @@ grid-template-columns: 2% 16% 16% 16% 16% 16% 16% 2%;
   opacity: 0;
   width: 0;
   height: 0;
-	
+	-webkit-appearance: none;
 	outline:none;
 }
 
@@ -109,7 +109,7 @@ grid-template-columns: 2% 16% 16% 16% 16% 16% 16% 2%;
   background-color: #ccc;
   -webkit-transition: .4s;
   transition: .4s;
-	
+	-webkit-appearance: none;
 	outline:none;
 }
 
@@ -123,19 +123,19 @@ grid-template-columns: 2% 16% 16% 16% 16% 16% 16% 2%;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
-	
+	-webkit-appearance: none;
 	outline:none;
 }
 
 input:checked + .slider {
   background-color: #2196F3;
-	
+	-webkit-appearance: none;
 	outline:none;
 }
 
 input:focus + .slider {
   box-shadow: 0 0 1px #2196F3;
-	
+	-webkit-appearance: none;
 	outline:none;
 }
 
@@ -143,20 +143,20 @@ input:checked + .slider:before {
   -webkit-transform: translateX(52px);
   -ms-transform: translateX(52px);
   transform: translateX(52px);
-	
+	-webkit-appearance: none;
 	outline:none;
 }
 
 /* Rounded sliders */
 .slider.round {
   border-radius: 68px;
-	
+	-webkit-appearance: none;
 	outline:none;
 }
 
 .slider.round:before {
   border-radius: 50%;
 	outline:none;
-	
+	-webkit-appearance: none;
 	outline:none;
 }
