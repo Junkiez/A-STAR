@@ -1,0 +1,145 @@
+body{
+	background: linear-gradient(to right, red, yellow, green, blue, red);
+    background-position: center;
+    overflow: hidden;
+    
+    background-size: 300% 500%;
+	animation: gradient 8s ease infinite;
+    }
+
+@keyframes gradient {
+0%  {
+	background-position: 0% 0%;
+    }
+50% {
+	background-position: 100% 20%;
+    }
+100%{
+	background-position: 0% 0%;
+    }
+
+}
+.wrapper{
+display:grid;
+grid-template-columns: 2% 16% 16% 16% 16% 16% 16% 2%;
+}
+.wrapper1{
+	display:grid;
+	height:200px;
+	grid-template-rows: 30% 40% 30%;
+}
+.wrapper2{
+	display:grid;
+	grid-template-rows: 40% 60%;
+}
+.arr{
+  border: solid transparent;
+  border-width: 0 9px 9px 0;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(0deg);
+}
+
+.button1{
+    color: transparent;
+    border-style: solid;
+	border-color: transparent;
+	border-width: 0px;
+	border-radius: 20px;
+    background-color: #FFF;
+    width: 100%;
+	padding-top: 70%;
+	outline:none;
+	
+	font-family: Segoe UI Light, sans-serif, bold; font-weight: 10; font-size:15px;
+}
+.button2{
+    border-style: solid;
+	border-color: transparent;
+	border-width: 10px;
+	border-radius: 20px;
+    background-color: #FFF;
+    width: 100%;
+    outline:none;
+    height:100%;
+	
+	color: lime;
+	font-size: 2.5em;
+	font-family: Segoe UI Light, Lighter, sans-serif; font-weight: 10;
+}
+.txt{
+	color: #FFF;
+	font-size: 1.5em;
+	font-family: Segoe UI Light, Lighter, sans-serif; font-weight: 30;
+}
+
+
+
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 68px;
+
+    outline:none;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 52px;
+  width: 52px;
+  left: 8px;
+  bottom: 8px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(52px);
+  -ms-transform: translateX(52px);
+  transform: translateX(52px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 68px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
