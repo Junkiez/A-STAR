@@ -79,7 +79,9 @@ grid-template-columns: 2% 16% 16% 16% 16% 16% 16% 2%;
 input[type="checkbox"]:focus{
         outline:0;
     }
-
+.checkbox input[type="checkbox"]:focus + label::before {
+  outline: none;
+}
 .switch {
   position: relative;
   display: inline-block;
@@ -87,6 +89,7 @@ input[type="checkbox"]:focus{
   height: 68px;
 -webkit-appearance: none;
     outline:none;
+	
 }
 
 /* Hide default HTML checkbox */
