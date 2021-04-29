@@ -119,7 +119,7 @@ function checkVertexIsConnectedAndSetPropery(start, finish)
 				currentVertex = vertexes[i];
 			}
 		}
-		//2
+		//2/*
 		if((currentVertex > 5) && (vertexProperty[currentVertex-6][2] === false) && (vertexProperty[currentVertex-6][1] === 0))
 		{
 			vertexes.push(currentVertex-6);
@@ -139,7 +139,7 @@ function checkVertexIsConnectedAndSetPropery(start, finish)
 				document.getElementById(String((currentVertex-6)%6) + String(Math.trunc((currentVertex-6) / 6))).style.background = 'purple';
 				break;
 		    }
-		}
+		}*/
 		//4
 		if((currentVertex % 6 != 0) && (vertexProperty[currentVertex-1][2] === false) && (vertexProperty[currentVertex-1][1] === 0))
 		{
@@ -203,6 +203,7 @@ function checkVertexIsConnectedAndSetPropery(start, finish)
 				break;
 		    }
 		}
+		/*
 		//1
 		if((currentVertex % 6 != 0) && (currentVertex > 5) && (vertexProperty[currentVertex-7][2] === false) && (vertexProperty[currentVertex-7][1] === 0))
 		{
@@ -223,8 +224,8 @@ function checkVertexIsConnectedAndSetPropery(start, finish)
 				document.getElementById(String((currentVertex-7)%6) + String(Math.trunc((currentVertex-7) / 6))).style.background = 'purple';
 				break;
 		    }
-		}
-		
+		}*/
+		/*
 		//3
 		if(((currentVertex + 1) % 6 != 0) && (currentVertex > 5) && (vertexProperty[currentVertex-5][2] === false) && (vertexProperty[currentVertex-5][1] === 0))
 		{
@@ -247,8 +248,8 @@ function checkVertexIsConnectedAndSetPropery(start, finish)
 				break;
 		    }
 		}
-		
-		
+		*/
+		/*
 		//7
 		if((currentVertex % 6 != 0) && (currentVertex < 30) && (vertexProperty[currentVertex+5][2] === false) && (vertexProperty[currentVertex+5][1] === 0))
 		{
@@ -271,7 +272,7 @@ function checkVertexIsConnectedAndSetPropery(start, finish)
 				break;
 		    }
 		}
-		
+		*//*
 		//9
 		if(((currentVertex + 1) % 6 != 0) && (currentVertex < 30) && (vertexProperty[currentVertex+7][2] === false) && (vertexProperty[currentVertex+7][1] === 0))
 		{
@@ -295,7 +296,7 @@ function checkVertexIsConnectedAndSetPropery(start, finish)
 		    }
 		}
 		
-		
+		*/
 		var removedItem = vertexes.splice(p, 1);
 		
 	}
