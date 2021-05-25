@@ -203,7 +203,7 @@ function checkVertexIsConnectedAndSetPropery(start, finish)
 				break;
 		    }
 		}
-		
+		/*
 		//1
 		if((currentVertex % 6 != 0) && (currentVertex > 5) && (vertexProperty[currentVertex-7][2] === false) && (vertexProperty[currentVertex-7][1] === 0))
 		{
@@ -297,7 +297,7 @@ function checkVertexIsConnectedAndSetPropery(start, finish)
 		    }
 		}
 		
-		
+		*/
 		var removedItem = vertexes.splice(p, 1);
 		
 	}
