@@ -1,4 +1,4 @@
-function Balance1(){
+function Balance1(){//functions for automatic unswich other radiobuttons
     if (document.getElementById("check1").checked === true){
         document.getElementById("check2").checked = false;
         document.getElementById("check3").checked = false;
@@ -203,7 +203,7 @@ function checkVertexIsConnectedAndSetPropery(start, finish)
 				break;
 		    }
 		}
-		/*
+		
 		//1
 		if((currentVertex % 6 != 0) && (currentVertex > 5) && (vertexProperty[currentVertex-7][2] === false) && (vertexProperty[currentVertex-7][1] === 0))
 		{
@@ -297,7 +297,7 @@ function checkVertexIsConnectedAndSetPropery(start, finish)
 		    }
 		}
 		
-		*/
+		
 		var removedItem = vertexes.splice(p, 1);
 		
 	}
@@ -427,19 +427,5 @@ function Main() {
 	
 	
 	
-	//let v1 = new Vertex()
-	/*
-	Короче, в цій функції нада написати той алгоритм
-	Оператори знайомі, розберешся
-	Бат
-	По ходу обходу встав ту конструкцію
-	"document.getElementById(id).style.background = 'yellow';"
-	Воно буде зафарбовувати відвідані квадратики 
-	В id для того треба передати ключ у вигляді стрінга 'xy' де xy то координати, припустимо отак "23"
-	Ну і в кінці сам шлях
-	Отак думаю:
-	"document.getElementById(id).style.background = 'cyan';"
-	Єслі шо - питай
-	Удачі в вебі, бережи очко
-	*/
+
 }
