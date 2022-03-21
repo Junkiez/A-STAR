@@ -1,38 +1,37 @@
-body{
-	background: linear-gradient(to right, red, yellow, green, blue, red);
-    background-position: center;
-    overflow: hidden;
-    
-    background-size: 300% 500%;
-	animation: gradient 8s ease infinite;
-    }
+body {
+  background: linear-gradient(to right, red, yellow, green, blue, red);
+  background-position: center;
+  overflow: hidden;
+
+  background-size: 300% 500%;
+  animation: gradient 8s ease infinite;
+}
 
 @keyframes gradient {
-0%  {
-	background-position: 0% 0%;
-    }
-50% {
-	background-position: 100% 20%;
-    }
-100%{
-	background-position: 0% 0%;
-    }
-
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 20%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
 }
-.wrapper{
-display:grid;
-grid-template-columns: 2% 16% 16% 16% 16% 16% 16% 2%;
+.wrapper {
+  display: grid;
+  grid-template-columns: 2% 16% 16% 16% 16% 16% 16% 2%;
 }
-.wrapper1{
-	display:grid;
-	height:200px;
-	grid-template-rows: 30% 40% 30%;
+.wrapper1 {
+  display: grid;
+  height: 200px;
+  grid-template-rows: 30% 40% 30%;
 }
-.wrapper2{
-	display:grid;
-	grid-template-rows: 40% 60%;
+.wrapper2 {
+  display: grid;
+  grid-template-rows: 40% 60%;
 }
-.arr{
+.arr {
   border: solid transparent;
   border-width: 0 9px 9px 0;
   border-radius: 5px;
@@ -43,42 +42,46 @@ grid-template-columns: 2% 16% 16% 16% 16% 16% 16% 2%;
   transform: rotate(0deg);
 }
 
-.button1{
-    color: transparent;
-    border-style: solid;
-	border-color: transparent;
-	border-width: 0px;
-	border-radius: 20px;
-    background-color: #FFF;
-    width: 100%;
-	padding-top: 70%;
-	outline:none;
-	
-	font-family: Segoe UI Light, sans-serif, bold; font-weight: 10; font-size:15px;
+.button1 {
+  color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0px;
+  border-radius: 20px;
+  background-color: #fff;
+  width: 100%;
+  padding-top: 70%;
+  outline: none;
+
+  font-family: Segoe UI Light, sans-serif, bold;
+  font-weight: 10;
+  font-size: 15px;
 }
-.button2{
-    border-style: solid;
-	border-color: transparent;
-	border-width: 10px;
-	border-radius: 20px;
-    background-color: #FFF;
-    width: 100%;
-    outline:none;
-    height:100%;
-	
-	color: lime;
-	font-size: 2.5em;
-	font-family: Segoe UI Light, Lighter, sans-serif; font-weight: 10;
+.button2 {
+  border-style: solid;
+  border-color: transparent;
+  border-width: 10px;
+  border-radius: 20px;
+  background-color: #fff;
+  width: 100%;
+  outline: none;
+  height: 100%;
+
+  color: lime;
+  font-size: 2.5em;
+  font-family: Segoe UI Light, Lighter, sans-serif;
+  font-weight: 10;
 }
-.txt{
-	color: #FFF;
-	font-size: 1.5em;
-	font-family: Segoe UI Light, Lighter, sans-serif; font-weight: 30;
+.txt {
+  color: #fff;
+  font-size: 1.5em;
+  font-family: Segoe UI Light, Lighter, sans-serif;
+  font-weight: 30;
 }
 
-input[type="checkbox"]:focus{
-        outline:0;
-    }
+input[type="checkbox"]:focus {
+  outline: 0;
+}
 .checkbox input[type="checkbox"]:focus + label::before {
   outline: none;
 }
@@ -87,9 +90,8 @@ input[type="checkbox"]:focus{
   display: inline-block;
   width: 120px;
   height: 68px;
--webkit-appearance: none;
-    outline:none;
-	
+  -webkit-appearance: none;
+  outline: none;
 }
 
 /* Hide default HTML checkbox */
@@ -97,8 +99,8 @@ input[type="checkbox"]:focus{
   opacity: 0;
   width: 0;
   height: 0;
-	-webkit-appearance: none;
-	outline:none;
+  -webkit-appearance: none;
+  outline: none;
 }
 
 /* The slider */
@@ -110,10 +112,10 @@ input[type="checkbox"]:focus{
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-	-webkit-appearance: none;
-	outline:none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-appearance: none;
+  outline: none;
 }
 
 .slider:before {
@@ -124,42 +126,42 @@ input[type="checkbox"]:focus{
   left: 8px;
   bottom: 8px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-	-webkit-appearance: none;
-	outline:none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-appearance: none;
+  outline: none;
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
-	-webkit-appearance: none;
-	outline:none;
+  background-color: #2196f3;
+  -webkit-appearance: none;
+  outline: none;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-	-webkit-appearance: none;
-	outline:none;
+  box-shadow: 0 0 1px #2196f3;
+  -webkit-appearance: none;
+  outline: none;
 }
 
 input:checked + .slider:before {
   -webkit-transform: translateX(52px);
   -ms-transform: translateX(52px);
   transform: translateX(52px);
-	-webkit-appearance: none;
-	outline:none;
+  -webkit-appearance: none;
+  outline: none;
 }
 
 /* Rounded sliders */
 .slider.round {
   border-radius: 68px;
-	-webkit-appearance: none;
-	outline:none;
+  -webkit-appearance: none;
+  outline: none;
 }
 
 .slider.round:before {
   border-radius: 50%;
-	outline:none;
-	-webkit-appearance: none;
-	outline:none;
+  outline: none;
+  -webkit-appearance: none;
+  outline: none;
 }
